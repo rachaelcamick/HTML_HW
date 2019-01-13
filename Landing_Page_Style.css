@@ -1,0 +1,20 @@
+body {
+    font-family: "Arial";
+}
+
+h2 {
+    font-size: 30px;;
+    color: white;
+    background-color: rgb(47, 53, 52);
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(45, 48, 47);
+   
+}
+ p {
+     font-size: 18px;
+    
+ }

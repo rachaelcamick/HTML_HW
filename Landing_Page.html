@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Climate Study - Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="Landing_Page_Style.css">
+</head>
+<body>
+    <header>
+        <!--create navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="Landing_Page.html">Latitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Data.html">Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="MaxTemperature.html">Max Temperature</a>
+                        <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+                        <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class=".col-m-">
+                <h1>Summary: Latitude vs. X</h1>
+                <p>The purpose of this project was to analyze 
+        how weather changes as you get closer to the equator.  To accomplish this analysis, we first 
+        pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                </p>
+                <p>After assembling the dataset, we used Matplotlib to plot
+        various aspects of the weather vs. latitude. Factors we looked at 
+        included: temperature, cloudiness, wind speed, and humidity.  This site provides the
+        source data and visualizations created as part of the analysis, as well as 
+        explanations and descriptions of any trends and correlations witnessed.
+            </p>
+            </div>
+            <div>
+                <h1>Visualizations</h1>
+                <a href="Cloudiness.html"><img src="Latitude_Cloudiness.png" alt="Cloudiness plot">Cloudiness By Latitude</a>
+                <a href="Humidity.html"><img src="Latitude_Humidity.png" alt="Humidity plot">Humidity by Latitude</a>
+                <a href="WindSpeed.html"><img src="Latitude_WindSpeed.png" alt="Wind Speed plot">Wind Speed by Latitude</a>
+                <a href="MaxTemperature.html"><img src="Latitude_Temperature.png" alt="Temperature plot">Temperature by Latitude</a>
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
